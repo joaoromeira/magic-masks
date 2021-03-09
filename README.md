@@ -2,9 +2,11 @@
 
 This is magic! 🎩
 
-## Using
+## About
 
-Simple use
+Simple lib to you use magic masks! I always use it in my projects, but at this moment I decided to create a library for the community to use. I hope you have fun!
+
+### Simple use
 
 ```js
 import { unmask, zipCode } from 'magic-masks';
@@ -18,7 +20,7 @@ console.log(unmask(zipCodeMasked)); // Output is 00000000;
 
 You can use with anything
 
-## ReactJS (uncontroled input)
+### ReactJS (uncontroled input)
 
 ```jsx
 import { useRef, useCallback } from 'react';
@@ -66,7 +68,7 @@ const App = () => {
 export default App;
 ```
 
-## React Native (uncontroled input)
+### React Native (uncontroled input)
 
 ```jsx
 import { useRef, useCallback } from 'react';
