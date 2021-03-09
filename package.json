@@ -1,8 +1,8 @@
 {
   "name": "magic-masks",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Only a library of magic masks",
-  "main": "src/server.ts",
+  "main": "src/index.ts",
   "repository": "https://github.com/Vini-Dev/magic-masks",
   "author": "João <vi.peres@icloud.com>",
   "private": false,
