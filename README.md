@@ -23,13 +23,13 @@ Simple lib to you use magic masks! I always use it in my projects, but at this m
 ### Simple use
 
 ```js
-import { unmask, zipCode } from 'magic-masks';
+import { clear, zipCode } from 'magic-masks';
 
 const zipCodeMasked = zipCode('00000000');
 
 console.log(zipCodeMasked); // Output is 00000-000
 
-console.log(unmask(zipCodeMasked)); // Output is 00000000;
+console.log(clear(zipCodeMasked)); // Output is 00000000;
 ```
 
 You can use with anything
