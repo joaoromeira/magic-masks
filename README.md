@@ -77,7 +77,7 @@ Input.propTypes = {
 };
 
 const App = () => {
-  return <Input name="zipCode" mask="zip_code" />;
+  return <Input name="zipCode" mask="zipCode" />;
 };
 
 export default App;
@@ -121,7 +121,7 @@ Input.propTypes = {
 };
 
 const App = () => {
-  return <Input name="zipCode" mask="zip_code" />;
+  return <Input name="zipCode" mask="zipCode" />;
 };
 
 export default App;
