@@ -1,6 +1,6 @@
 import cpf from '../lib/cpf';
 
-describe('CPF tests', () => {
+export default describe('CPF tests', () => {
   test('CPF likes number', () => {
     expect(cpf(10000000000)).toBe('100.000.000-00');
   });
