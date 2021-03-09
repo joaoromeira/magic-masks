@@ -1,5 +1,5 @@
 /**
- * @Method: Returns the value masked with this pattern #####-###.
+ * @Method: Returns the value masked with this pattern 00000-000.
  * @Param {string | number}
  * @Return {string}
  */
