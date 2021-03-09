@@ -6,6 +6,20 @@ This is magic! 🎩
 
 Simple lib to you use magic masks! I always use it in my projects, but at this moment I decided to create a library for the community to use. I hope you have fun!
 
+## Available Masks
+
+- cellphone
+- cellphoneOrPhone (dynamically changes)
+- clear (remove all special characters)
+- cnpj
+- cpf
+- cpfOrCnpj (dynamically changes)
+- creditCard
+- creditCardExpiry
+- currency
+- phone
+- zipCode
+
 ### Simple use
 
 ```js
@@ -31,16 +45,17 @@ import PropTypes from 'prop-types';
 const Input = ({ name, mask }) => {
   const inputRef = useRef();
 
-  const handleChangeInput = useCallback(e => {
-    const { value } = e.target;
+  const handleChangeInput = useCallback((e) => {
+      const { value } = e.target;
 
-    if (mask) {
-      if (!masks[mask]) throw new Error(`The magic mask ${mask} is not available!`);
+      if (mask) {
+        if (!masks[mask])
+          throw new Error(`The magic mask ${mask} is not available!`);
 
-      e.target.value = masks[mask](value)
-    };
-
-  }), [masks, mask];
+        e.target.value = masks[mask](value);
+      }
+    }),
+    [masks, mask];
 
   return (
     <input
