@@ -1,9 +1,9 @@
 {
   "name": "magic-masks",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "description": "Only a library of magic masks",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/lib/index.js",
+  "types": "dist/lib/index.d.ts",
   "repository": "https://github.com/Vini-Dev/magic-masks",
   "author": "João <vi.peres@icloud.com>",
   "private": false,
@@ -13,7 +13,7 @@
   ],
   "keywords": ["masks", "input-mask"],
   "scripts": {
-    "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored",
+    "build": "tsc",
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify src/server.ts",
     "start": "node dist/server.js",
     "test": "jest --no-cache",
@@ -24,11 +24,6 @@
     "dotenv": "^8.2.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.10.5",
-    "@babel/core": "^7.11.4",
-    "@babel/node": "^7.10.5",
-    "@babel/preset-env": "^7.11.0",
-    "@babel/preset-typescript": "^7.10.4",
     "@types/express": "^4.17.7",
     "@types/jest": "^26.0.15",
     "@types/sequelize": "^4.28.9",

@@ -1,3 +1,8 @@
+/**
+ * @Method: Returns the value masked with this pattern #####-###.
+ * @Param {string | number}
+ * @Return {string}
+ */
 const zipCode = (value: string | number): string => {
   const string = value.toString();
 
