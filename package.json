@@ -1,6 +1,6 @@
 {
   "name": "magic-masks",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Only a library of magic masks",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -16,7 +16,9 @@
     "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored",
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify src/server.ts",
     "start": "node dist/server.js",
-    "test": "jest --no-cache"
+    "test": "jest --no-cache",
+    "prepare": "yarn build"
+
   },
   "dependencies": {
     "dotenv": "^8.2.0"
