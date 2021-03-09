@@ -5,8 +5,7 @@
     "declaration": true,
     "lib": [
       "es6"
-    ],
-    "allowJs": true,
+    ],    
     "outDir": "./dist",
     "rootDir": "./src",
     "removeComments": true,
@@ -21,22 +20,7 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
-    "paths": {
-      "@config/*": [
-        "./src/config/*"
-      ],
-      "@controllers/*": [
-        "./src/controllers/*"
-      ],
-      "@middlewares/*": [
-        "./src/middlewares/*"
-      ],
-      "@models/*": [
-        "./src/models/*"
-      ],
-    }
   },
-  "include": [
-    "src/**/*"
-  ]
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
 }

@@ -1,12 +1,17 @@
 {
   "name": "magic-masks",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Only a library of magic masks",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "https://github.com/Vini-Dev/magic-masks",
   "author": "João <vi.peres@icloud.com>",
   "private": false,
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "keywords": ["masks", "input-mask"],
   "scripts": {
     "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored",
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify src/server.ts",
