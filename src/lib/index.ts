@@ -40,5 +40,16 @@ const masks = {
 };
 
 export type IMagicMasks = typeof masks;
+export type IMagicMasksNames =
+  | 'cellphone'
+  | 'cellphoneOrPhone'
+  | 'cnpj'
+  | 'cpf'
+  | 'cpfOrCnpj'
+  | 'creditCard'
+  | 'creditCardExpiry'
+  | 'currency'
+  | 'phone'
+  | 'zipCode';
 
 export default masks;
