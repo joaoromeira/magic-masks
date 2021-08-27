@@ -25,7 +25,7 @@ export { default as currency } from './currency';
 export { default as phone } from './phone';
 export { default as zipCode } from './zipCode';
 
-export default {
+const masks = {
   cellphone,
   cellphoneOrPhone,
   clear,
@@ -38,3 +38,7 @@ export default {
   phone,
   zipCode,
 };
+
+export type IMagicMasks = typeof masks;
+
+export default masks;

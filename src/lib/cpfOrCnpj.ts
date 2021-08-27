@@ -1,3 +1,4 @@
+import clear from './clear';
 import cnpj from './cnpj';
 
 const cpf = (string: string) =>
@@ -13,7 +14,7 @@ const cpf = (string: string) =>
  * @Return {string}
  */
 const cpfOrCnpj = (value: string | number): string => {
-  const string = value.toString();
+  const string = clear(value.toString());
 
   if (string.length <= 11) {
     return cpf(string);

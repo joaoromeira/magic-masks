@@ -4,17 +4,16 @@
  * @Return {string}
  */
 const cnpj = (value: string | number): string => {
-  const string = value.toString();
+  let string = value.toString();
 
-  const formattedString = string
-    .replace(/\D/g, '')
-    .replace(/(\d{2})(\d)/, '$1.$2')
-    .replace(/(\d{3})(\d)/, '$1.$2')
-    .replace(/(\d{3})(\d)/, '$1/$2')
-    .replace(/(\d{4})(\d)/, '$1-$2')
-    .replace(/(.\d{2})\d+?$/, '$1');
+  string = string.replace(/\D/g, '')
+  string = string.replace(/^(\d{2})(\d)/,"$1.$2")
+  string = string.replace(/^(\d{2})\.(\d{3})(\d)/,"$1.$2.$3")
+  string = string.replace(/\.(\d{3})(\d)/,".$1/$2")
+  string = string.replace(/(\d{4})(\d)/,"$1-$2")
+  string = string.replace(/(-\d{2})\d+?$/, '$1')
 
-  return formattedString;
+  return string;
 };
 
 export default cnpj;

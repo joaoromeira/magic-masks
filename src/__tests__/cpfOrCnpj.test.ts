@@ -15,11 +15,11 @@ export default describe('CPF or CNPJ tests', () => {
   });
 
   test('Receive cpf with special characters', () => {
-    expect(cpfOrCnpj('566.050.610-04')).toBe('56.605.061/00');
+    expect(cpfOrCnpj('566.050.610-04')).toBe('566.050.610-04');
   });
 
   test('When cpf over size transform in cnpj', () => {
-    expect(cpfOrCnpj('725512660091')).toBe('72.551.266/00');
+    expect(cpfOrCnpj('725512660091')).toBe('72.551.266/0091');
   });
 
   test('Receive cnpj number', () => {

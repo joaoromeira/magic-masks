@@ -1,6 +1,6 @@
 {
   "name": "magic-masks",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "Only a library of magic masks",
   "main": "dist/lib/index.js",
   "types": "dist/lib/index.d.ts",
@@ -11,7 +11,7 @@
   "files": [
     "dist"
   ],
-  "keywords": ["masks", "input-mask"],
+  "keywords": ["masks", "input-mask", "zip-code-mask", "cpf-mask", "cnpj-mask", "credit-card-mask"],
   "scripts": {
     "build": "tsc",
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify src/server.ts",
