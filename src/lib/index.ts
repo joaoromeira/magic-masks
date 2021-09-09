@@ -10,6 +10,7 @@ import cpfOrCnpj from './cpfOrCnpj';
 import creditCard from './creditCard';
 import creditCardExpiry from './creditCardExpiry';
 import currency from './currency';
+import date from './date';
 import phone from './phone';
 import zipCode from './zipCode';
 
@@ -22,6 +23,7 @@ export { default as cpfOrCnpj } from './cpfOrCnpj';
 export { default as creditCard } from './creditCard';
 export { default as creditCardExpiry } from './creditCardExpiry';
 export { default as currency } from './currency';
+export { default as date } from './date';
 export { default as phone } from './phone';
 export { default as zipCode } from './zipCode';
 
@@ -35,6 +37,7 @@ const masks = {
   creditCard,
   creditCardExpiry,
   currency,
+  date,
   phone,
   zipCode,
 };
@@ -49,6 +52,7 @@ export type IMagicMasksNames =
   | 'creditCard'
   | 'creditCardExpiry'
   | 'currency'
+  | 'date'
   | 'phone'
   | 'zipCode';
 
